@@ -292,9 +292,143 @@
 // console.log(fullName);
 
 //Arrow function
-const getMyName = (firstName, lastName) => {
-  const fullName = firstName + "  " + lastName;
-  return fullName;
-};
-const fullName = getMyName("Nawang ", "Tashi ");
-console.log(fullName);
+// const getMyName = (firstName, lastName) => {
+//   const fullName = firstName + "  " + lastName;
+//   return fullName;
+// };
+// const fullName = getMyName("Nawang ", "Tashi ");
+// console.log(fullName);
+// let myName = prompt("enter my name ?");
+// console.log(myName);
+
+//object
+// let obj = {
+//   name: "Nawang",
+//   age: 25,
+//   address: "Thimphu",
+//   greet: function () {
+//     console.log("hello world");
+//   },
+// };
+// for (let key in obj) {
+//   console.log(key, obj[key]);
+// }
+// console.log(obj);
+// obj.greet();
+// let obj2 = obj;
+// console.log(obj2);
+
+//array
+
+//a collection of items/elements
+//creation of array
+// let arr = [2, 4, 5, 56, 6];
+// console.log(arr);
+
+//  array cronctrutor
+// let brr = new Array("hello", "world", 1, "this");
+// console.log(brr[3]);
+
+//array methods
+//1.push
+//add element at the end of the array
+// let brr = new Array("nawang", "tashi ", "javaScript", 1, 3);
+// here we are adding element at the end
+
+// brr.push("python");
+// here we are removing element at the end
+// brr.pop();
+//here we are removing from at the begining
+// brr.shift();
+//here we are adding element at the begining
+// brr.unshift("react");
+// brr.unshift("java");
+// brr.unshift("flutter");
+// brr.unshift("88");
+// let result = brr.slice(2, 4);
+// console.log(result);
+// brr.splice(4, 1, "database");
+
+// console.log(brr);
+
+//Map()
+// let arr = [1, 2, 3, 4];
+// let square = arr.map((a) => {
+//   return a * a;
+// });
+// console.log(square);
+//filter
+// let arr = [1, 3, 5, 44, 12, 14, 24, 41];
+// let evenNumber = arr.filter((number) => {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+// console.log(evenNumber);
+// another method
+//   return number % 2 === 0;
+// });
+// console.log(evenNumber);
+
+// let arr = [1, 3, "nawang ", "tashi ", null];
+// let result = arr.filter((value) => {
+//   return typeof value === String';
+// });
+// console.log(result);
+// let ans = arr.filter((value) => {
+//   if (typeof value === "string") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+// console.log(ans);
+
+//reduce()
+// let arr = [1, 2, 3, 4, 5];
+// let ans = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// });
+// console.log(ans);
+
+//sort
+// let arr = [5, 7, 2, 8, 9];
+// arr.sort();
+// arr.reverse();
+// console.log(arr.indexOf(5));
+
+//forEach
+// let arr = [11, 22, 66, 64];
+// arr.forEach((value, index) => {
+//   console.log(value, index);
+// });
+
+// for-of
+// let arr = [10, 61, 44, 4];
+// for (let value of arr) {
+//   console.log(value);
+// }
+
+// let fullName = "binaya";
+// for (let val of fullName) {
+//   console.log(val);
+// }
+let arr = [11, 63, 14, 52, 44, 55];
+function getSum(arr) {
+  let len = arr.length;
+  let sum = 0;
+  arr.forEach((value) => {
+    sum = sum + value;
+  });
+  return sum;
+}
+//   for (let i = 0; i < len; i++) {
+//     sum = sum + arr[i];
+//   }
+//   return sum;
+// }
+let totalSum = getSum(arr);
+console.log(totalSum);
+// another method
