@@ -415,20 +415,41 @@
 // for (let val of fullName) {
 //   console.log(val);
 // }
-let arr = [11, 63, 14, 52, 44, 55];
-function getSum(arr) {
-  let len = arr.length;
-  let sum = 0;
-  arr.forEach((value) => {
-    sum = sum + value;
-  });
-  return sum;
-}
+// let arr = [11, 63, 14, 52, 44, 55];
+// function getSum(arr) {
+//   let len = arr.length;
+//   let sum = 0;
+//   arr.forEach((value) => {
+//     sum = sum + value;
+//   });
+//   return sum;
+// }
 //   for (let i = 0; i < len; i++) {
 //     sum = sum + arr[i];
 //   }
 //   return sum;
 // }
-let totalSum = getSum(arr);
-console.log(totalSum);
+// let totalSum = getSum(arr);
+// console.log(totalSum);
 // another method
+
+//callstack & hoisting
+//funtion hoisting
+// syaMyName("binaya Moktan ");
+// function sayMyName(finalName) {
+//   console.log(finalName);
+// }
+// var  hoisting
+// console.log(age);
+// var age = 25;
+
+//let Hoisting does't work
+// console.log(age);
+// let age = 57;
+
+// using function expression
+//it does't work here
+// sayMyName("binaya moktan");
+// let sayMyName = function (finalName) {
+//   console.log(finalName);
+// };
